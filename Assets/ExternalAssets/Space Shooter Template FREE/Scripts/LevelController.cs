@@ -89,7 +89,7 @@ public class LevelController : MonoBehaviour {
                     planetsList.Add(planets[i]);
                 }
             }
-            newPlanet.GetComponent<DirectMoving>().speed = planetsSpeed;
+            //newPlanet.GetComponent<DirectMoving>().speed = planetsSpeed;
 
             yield return new WaitForSeconds(timeBetweenPlanets);
         }

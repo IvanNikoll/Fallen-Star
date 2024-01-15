@@ -1,12 +1,19 @@
 using UnityEngine;
+using Zenject;
 
 public class PlayerController: MonoBehaviour 
 {
+    private IGameStopper _gameStopper;
     private int _upperBoundary;
     private int _lowerBoundary;
     private int _leftBoundary;
     private int _rightBoundary;
 
+    [Inject]
+    private void Construct(IGameStopper gameStopper)
+    {
+        _gameStopper= gameStopper;
+    }
     private void Start()
     {
         _upperBoundary = 10;
@@ -36,6 +43,15 @@ public class PlayerController: MonoBehaviour
         if (player.position.x > _leftBoundary)
         {
             player.position = new Vector3(_leftBoundary, player.position.y, 3);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Planet"))
+        {
+            Debug.Log("collided");
+            _gameStopper.StopTheGame();
         }
     }
 }

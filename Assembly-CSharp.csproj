@@ -59,37 +59,42 @@
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\RepeatingBackground.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\BackGround\BackGroundMover.cs" />
+    <Compile Include="Assets\Scripts\Input\IInputChecker.cs" />
     <Compile Include="Assets\Scripts\Input\DesktopInput.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Bonus.cs" />
     <Compile Include="Assets\Scripts\BackGround\BackGroundSpawner.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\PoolingController.cs" />
     <Compile Include="Assets\Scripts\Input\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMover.cs" />
+    <Compile Include="Assets\Scripts\Input\IInput.cs" />
+    <Compile Include="Assets\Scripts\Services\IGameStopper.cs" />
     <Compile Include="Assets\Scripts\Installers\LevelInstaller.cs" />
     <Compile Include="Assets\Scripts\Input\InputSwitcher.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Projectile.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Wave.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\LevelController.cs" />
+    <Compile Include="Assets\Scripts\Spawners\ObstacleSpawner.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\FollowThePath.cs" />
     <Compile Include="Assets\Scripts\BackGround\IBackGroundRegistrator.cs" />
     <Compile Include="Assets\Scripts\BackGround\BackGroundController.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\VisualEffect.cs" />
     <Compile Include="Assets\Scripts\BackGround\IMover.cs" />
     <Compile Include="Assets\Scripts\BackGround\BackGroundTrigger.cs" />
-    <Compile Include="Assets\Scripts\CoroutineRunner.cs" />
+    <Compile Include="Assets\Scripts\Player\IPlayerController.cs" />
+    <Compile Include="Assets\Scripts\Camera\SceneCamera.cs" />
+    <Compile Include="Assets\Scripts\Services\CoroutineRunner.cs" />
+    <Compile Include="Assets\Scripts\Player\IPositionChecker.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerView.cs" />
-    <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\DirectMoving.cs" />
+    <Compile Include="Assets\Scripts\Services\GameFlowController.cs" />
+    <Compile Include="Assets\Scripts\Obstacle\DirectMoving.cs" />
+    <Compile Include="Assets\Scripts\Services\ISpeedProvider.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Player.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\PlayerMoving.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Boundary.cs" />
     <Compile Include="Assets\Scripts\BackGround\IBackGroundSpawner.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Input\IInputChecker.cs" />
-    <Compile Include="Assets\Scripts\Input\IInput.cs" />
-    <Compile Include="Assets\Scripts\Player\IPositionChecker.cs" />
-    <Compile Include="Assets\Scripts\Player\IPlayerController.cs" />
-    <Compile Include="Assets\Scripts\Camera\SceneCamera.cs" />
+    <Compile Include="Assets\Scripts\Services\SceneCleaner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -782,6 +787,12 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
@@ -793,12 +804,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

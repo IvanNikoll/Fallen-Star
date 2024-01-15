@@ -7,11 +7,14 @@ public class LevelInstaller : MonoInstaller
     public GameObject BackGroundTrigger;
     public GameObject PlayerPrefab;
     public GameObject CameraPrefab;
+    public GameObject ObstacleSpawner;
     public CoroutineRunner CoroutineRunnerPrefab;
 
     public override void InstallBindings()
     {
+        Container.BindInterfacesAndSelfTo<GameFlowController>().AsSingle().NonLazy();
         InstallBackground();
+        InstallFactories();
         InstallInput();
         InstallCamera();
     }
@@ -22,6 +25,11 @@ public class LevelInstaller : MonoInstaller
         Container.Bind<BackGroundTrigger>().FromComponentInNewPrefab(BackGroundTrigger).AsSingle();
         Container.BindInterfacesAndSelfTo<BackGroundController>().AsSingle().NonLazy();
         Container.BindInstance<GameObject>(BackGroundPrefab).AsSingle().NonLazy();
+    }
+
+    private void InstallFactories()
+    {
+        Container.Bind<ObstacleSpawner>().FromComponentInNewPrefab(ObstacleSpawner).AsSingle().NonLazy();
     }
 
     private void InstallInput()

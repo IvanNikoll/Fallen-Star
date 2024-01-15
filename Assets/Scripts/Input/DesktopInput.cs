@@ -1,9 +1,7 @@
-using System;
 using UnityEngine;
 
 public class DesktopInput : PlayerInput
 {
-    private bool _isShooting;
     public DesktopInput(PlayerMover mover, IInputChecker checker) : base(mover, checker)
     {
         Checker.StartInputChecker(this);
