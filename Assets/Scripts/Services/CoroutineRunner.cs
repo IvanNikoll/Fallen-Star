@@ -63,7 +63,7 @@ public class CoroutineRunner : MonoBehaviour, IInputChecker
                 _speed += 0.0001f;
             }
             OnSpeedChanged?.Invoke();
-            yield return new WaitForSeconds(0.04f);
+            yield return new WaitForSeconds(0.02f);
         }
     }
     

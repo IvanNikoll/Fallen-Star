@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Zenject;
 
@@ -8,7 +9,9 @@ public class LevelInstaller : MonoInstaller
     public GameObject PlayerPrefab;
     public GameObject CameraPrefab;
     public GameObject ObstacleSpawner;
+    public LevelUIController uIController;
     public CoroutineRunner CoroutineRunnerPrefab;
+    
 
     public override void InstallBindings()
     {
@@ -17,6 +20,12 @@ public class LevelInstaller : MonoInstaller
         InstallFactories();
         InstallInput();
         InstallCamera();
+        InstallUI();
+    }
+
+    private void InstallUI()
+    {
+        Container.BindInterfacesAndSelfTo<LevelUIController>().FromComponentInNewPrefab(uIController).AsSingle().NonLazy();
     }
 
     private void InstallBackground()
@@ -35,7 +44,7 @@ public class LevelInstaller : MonoInstaller
     private void InstallInput()
     {
         Container.BindInterfacesAndSelfTo<PlayerView>().FromComponentInNewPrefab(PlayerPrefab).AsSingle();
-        Container.Bind<PlayerMover>().AsSingle().NonLazy();
+        Container.BindInterfacesAndSelfTo<PlayerMover>().AsSingle().NonLazy();
         Container.Bind<InputSwitcher>().AsSingle().NonLazy();
     }
 

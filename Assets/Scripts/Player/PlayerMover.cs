@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class PlayerMover
+public class PlayerMover: IPlayerMover
 {
-    private float _movingSpeed;
+    private float _movingSpeed; 
     public Transform PlayerTransform { get; private set; }
 
     public PlayerMover(PlayerView view)
@@ -14,5 +14,16 @@ public class PlayerMover
     public void Move(Vector3 directionVector)
     {
         PlayerTransform.Translate(directionVector * _movingSpeed);
+    }
+
+    public float GetSpeed()
+    {
+        return _movingSpeed;
+    }
+
+    public void SetSpeed(float speed)
+    {
+        _movingSpeed = speed;
+        Debug.Log("Speed changed to: " + speed);
     }
 }

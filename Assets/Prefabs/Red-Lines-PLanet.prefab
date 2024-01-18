@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 212246648251564820}
   - component: {fileID: 114285142464707356}
   - component: {fileID: -6525184150324855218}
+  - component: {fileID: 7186045492806946436}
   m_Layer: 0
   m_Name: Red-Lines-PLanet
   m_TagString: Planet
@@ -115,3 +116,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &7186045492806946436
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868464169396128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4.0843635
+  m_Height: 8.251579
+  m_Direction: 1
+  m_Center: {x: 0.04142608, y: 0.082850374, z: 0}
