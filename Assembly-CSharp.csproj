@@ -76,6 +76,7 @@
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Projectile.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Wave.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\LevelController.cs" />
+    <Compile Include="Assets\Scripts\Menu\MainSceneData.cs" />
     <Compile Include="Assets\Scripts\Player\IPlayerMover.cs" />
     <Compile Include="Assets\Scripts\Spawners\ObstacleSpawner.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\FollowThePath.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Scripts\BackGround\IMover.cs" />
     <Compile Include="Assets\Scripts\BackGround\BackGroundTrigger.cs" />
     <Compile Include="Assets\Scripts\Player\IPlayerController.cs" />
+    <Compile Include="Assets\Scripts\Installers\MenuInstaller.cs" />
     <Compile Include="Assets\Scripts\Camera\SceneCamera.cs" />
     <Compile Include="Assets\Scripts\Services\CoroutineRunner.cs" />
     <Compile Include="Assets\Scripts\Player\IPositionChecker.cs" />
@@ -94,6 +96,7 @@
     <Compile Include="Assets\Scripts\Obstacle\DirectMoving.cs" />
     <Compile Include="Assets\Scripts\Services\ISpeedProvider.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenuBtn.cs" />
     <Compile Include="Assets\Scripts\Services\SceneCleaner.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\PlayerMoving.cs" />
@@ -101,9 +104,6 @@
     <Compile Include="Assets\Scripts\BackGround\IBackGroundSpawner.cs" />
     <Compile Include="Assets\Scripts\LevelUI\LevelUIController.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
-    <Compile Include="Assets\Scripts\Menu\MainSceneData.cs" />
-    <Compile Include="Assets\Scripts\Installers\MenuInstaller.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -726,7 +726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232445e7d5a9cb242bf76a629c02fa88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackGroundPrefab: {fileID: 1291484365420543481, guid: 7425766571c43e843a7b1b9be36467eb,
+  BackGroundPrefab: {fileID: 2499812429878089357, guid: 943d37952a47ba2468f9f9a964f8bbdb,
     type: 3}
   BackGroundTrigger: {fileID: 2417433729972038032, guid: 42181ed1a439d964c9436ab68687c45e,
     type: 3}

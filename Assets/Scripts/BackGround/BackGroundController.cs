@@ -13,7 +13,7 @@ public class BackGroundController : IBackGroundRegistrator
         _backGround = new List<GameObject>();
         _coroutineRunner = coroutineRunner;
         _spawner = new BackGroundSpawner(this, BackGroundPrefab);
-        _backGroundRespawnPosition = new Vector3(-129.6f,0,0);
+        _backGroundRespawnPosition = new Vector3(-57f,0,-10);
         trigger.BackGroundReachedBoundary += OnBackGroundReachedBoundary;
     }
 

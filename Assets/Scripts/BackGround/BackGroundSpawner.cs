@@ -9,10 +9,10 @@ public class BackGroundSpawner : IBackGroundSpawner
     {
         _registrator = registrator;
         _backGroundprefab = BackGroundPrefab;
-        Spawn(new Vector2(3,0));
+        Spawn(new Vector3(3,0, -10));
     }
 
-    public void Spawn(Vector2 spawnPosition)
+    public void Spawn(Vector3 spawnPosition)
     {
         GameObject newObject = Object.Instantiate(_backGroundprefab, spawnPosition, Quaternion.identity);
         if(_backGroundprefab.GetComponent<BackGroundMover>() != null)
