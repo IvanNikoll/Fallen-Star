@@ -1,0 +1,17 @@
+Using template 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer\Apk\UnityManifest.xml'
+
+isGame application flag was added because:
+	Android TV Compatability was enabled
+android.permission.INTERNET was added because:
+	Analytics
+	Performance Reporting
+android.hardware.touchscreen.multitouch, android.hardware.touchscreen.multitouch.distinct were enabled because:
+	UnityEngine.Input::get_touches was present in:
+		Assembly-CSharp-FeaturesChecked.txt
+		Cinemachine-FeaturesChecked.txt
+	UnityEngine.Input::GetTouch was present in:
+		UnityEngine.UI-FeaturesChecked.txt
+	UnityEngine.Input::get_touchCount was present in:
+		Assembly-CSharp-FeaturesChecked.txt
+		Cinemachine-FeaturesChecked.txt
+		UnityEngine.UI-FeaturesChecked.txt

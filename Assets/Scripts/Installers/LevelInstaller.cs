@@ -11,6 +11,7 @@ public class LevelInstaller : MonoInstaller
     public GameObject ObstacleSpawner;
     public LevelUIController uIController;
     public CoroutineRunner CoroutineRunnerPrefab;
+    public FloatingJoystick joystickPrefab;
     
 
     public override void InstallBindings()
@@ -43,6 +44,7 @@ public class LevelInstaller : MonoInstaller
 
     private void InstallInput()
     {
+        Container.BindInterfacesAndSelfTo<FloatingJoystick>().FromComponentInHierarchy(GameObject.Find("Floating Joystick")).AsSingle(); //.FromComponentInNewPrefab(joystickPrefab).AsSingle().NonLazy();
         Container.BindInterfacesAndSelfTo<PlayerView>().FromComponentInNewPrefab(PlayerPrefab).AsSingle();
         Container.BindInterfacesAndSelfTo<PlayerMover>().AsSingle().NonLazy();
         Container.Bind<InputSwitcher>().AsSingle().NonLazy();

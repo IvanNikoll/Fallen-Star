@@ -2064,7 +2064,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854308167}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: LeaveGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2985,7 +2985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -6.999939}
+  m_AnchoredPosition: {x: 0, y: -7}
   m_SizeDelta: {x: -320, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7050785079904892005
@@ -3141,7 +3141,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25559312, y: 0.39900002}
   m_AnchorMax: {x: 0.6568644, y: 0.59000003}
-  m_AnchoredPosition: {x: 0, y: -0.4165001}
+  m_AnchoredPosition: {x: 0, y: -0.4165039}
   m_SizeDelta: {x: -2.3399963, y: 1.1669998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7586994649383147107

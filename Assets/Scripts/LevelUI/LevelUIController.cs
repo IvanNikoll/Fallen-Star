@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
@@ -30,26 +29,28 @@ public class LevelUIController : MonoBehaviour
 
     public void SaveProgress()
     {
-        List<PlayerData> _statsdataList = DataSaver.ReadFromJSON<PlayerData>("StatsSave");
-        PlayerData playerData = _statsdataList.Find(note => note.Key == "StatsSave");
+        PlayerData playerData = DataSaver.Load("StatsSave");
         if (playerData != null)
         {
             int credits = playerData.Credits + Score;
-            _statsdataList.Clear();
-            _statsdataList.Add(new PlayerData("StatsSave",playerData.UpgradeLevel, playerData.UpgradePrice, credits, _playerMover.GetSpeed()));
-            DataSaver.Save(_statsdataList, "StatsSave");
+            playerData = new PlayerData("StatsSave", playerData.UpgradeLevel, playerData.UpgradePrice, credits, _playerMover.GetSpeed());
+            DataSaver.Save("StatsSave", playerData);
+        }
+        else
+        {
+            PlayerData newPlayerData = new PlayerData("StatsSave", 1, 100, Score, _playerMover.GetSpeed());
+            DataSaver.Save("StatsSave", newPlayerData);
         }
     }
 
-    public void RewardPressed()
+        public void RewardPressed()
     {
         Debug.Log("Reward watched");
     }
 
     private void CheckSaves()
     {
-        List<PlayerData> _statsdataList = DataSaver.ReadFromJSON<PlayerData>("StatsSave");
-        PlayerData playerData = _statsdataList.Find(note => note.Key == "StatsSave");
+        PlayerData playerData = DataSaver.Load("StatsSave");
         if (playerData != null)
         {
             _playerMover.SetSpeed(playerData.MovingSpeed);

@@ -35,7 +35,7 @@ public class InputSwitcher
 
     private void SwitchInputForAndroid()
     {
-        // Логика для Android
+        _container.BindInterfacesAndSelfTo<MobileInput>().FromComponentInHierarchy(GameObject.Find("Floating Joystick")).AsSingle();
     }
 
     private void SwitchInputForDesktop()
