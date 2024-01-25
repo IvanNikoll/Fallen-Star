@@ -26,7 +26,8 @@ public static class DataSaver
 
     private static string GetPath(string fileName)
     {
-        return Application.persistentDataPath + "/" + fileName;
+        return Path.Combine(Application.persistentDataPath, fileName);
+        //return Application.persistentDataPath + "/" + fileName;
     }
 
     private static void WriteFile(string path, string context)
