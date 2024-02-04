@@ -377,6 +377,7 @@
 "Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
+"Assets/Scripts/Audio/MusicController.cs"
 "Assets/Scripts/BackGround/BackGroundController.cs"
 "Assets/Scripts/BackGround/BackGroundMover.cs"
 "Assets/Scripts/BackGround/BackGroundSpawner.cs"

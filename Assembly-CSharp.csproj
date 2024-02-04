@@ -79,6 +79,7 @@
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Wave.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\LevelController.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Scripts\Audio\MusicController.cs" />
     <Compile Include="Assets\Scripts\Menu\MainSceneData.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
