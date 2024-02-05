@@ -73,7 +73,7 @@ public class LevelUIController : MonoBehaviour
         for (int i = 0; i <= Score; i++)
         {
             FinalScore = i;
-            yield return new WaitForSeconds(0.04f);
+            yield return new WaitForSeconds(0.015f);
         }
     }
 }

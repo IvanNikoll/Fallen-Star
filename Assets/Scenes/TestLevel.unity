@@ -1044,10 +1044,10 @@ RectTransform:
   m_Father: {fileID: 1677359191}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.08579168, y: 0.86666673}
-  m_AnchorMax: {x: 0.46268758, y: 0.9461482}
-  m_AnchoredPosition: {x: -14.328857, y: -20.044312}
-  m_SizeDelta: {x: -36.657715, y: 24.088684}
+  m_AnchorMin: {x: 0.08579168, y: 0.84012824}
+  m_AnchorMax: {x: 0.5, y: 0.9461482}
+  m_AnchoredPosition: {x: -61.828857, y: -4.5443115}
+  m_SizeDelta: {x: -131.65771, y: -6.911316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430285850
 MonoBehaviour:
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ScoreText
+  m_text: 'ScoreText '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 090b006c3bcfe3f4eb35b05eb5771675, type: 2}
   m_sharedMaterial: {fileID: 1896450218359340420, guid: 090b006c3bcfe3f4eb35b05eb5771675,
@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 39.433044}
+  m_margin: {x: 0, y: 0, z: -135.7334, w: 6.369751}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
