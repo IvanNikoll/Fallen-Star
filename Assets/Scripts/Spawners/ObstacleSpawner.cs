@@ -33,18 +33,19 @@ public class ObstacleSpawner : MonoBehaviour
         _spawnVector = new Vector3(XSpawnValue,y, 3);
     }
 
-    private float GetRandomTime()
+    private float GetRandomTime(float minTime, float maxTime)
     {
-        float respawnTime = Random.Range(4, 6);
+        float respawnTime = Random.Range(minTime, maxTime);
         return respawnTime;
-
     }
     
     private IEnumerator SpawningCoroutine()
     {
+        float minSpawnTime = 3;
+        float maxSpawnTime = 5;
         while (!_isGameOver)
         {
-            float respawnTime = GetRandomTime();
+            float respawnTime = GetRandomTime(minSpawnTime,maxSpawnTime);
             GetRandomValues();
             Spawn(IdlePrefab[_currentPrefab]);
             yield return new WaitForSeconds(respawnTime);

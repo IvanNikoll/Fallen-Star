@@ -78,7 +78,7 @@
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Projectile.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\Wave.cs" />
     <Compile Include="Assets\ExternalAssets\Space Shooter Template FREE\Scripts\LevelController.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Scripts\Audio\MusicController.cs" />
     <Compile Include="Assets\Scripts\Menu\MainSceneData.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
@@ -93,7 +93,6 @@
     <Compile Include="Assets\Scripts\BackGround\IMover.cs" />
     <Compile Include="Assets\Scripts\BackGround\BackGroundTrigger.cs" />
     <Compile Include="Assets\Scripts\Player\IPlayerController.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Scripts\Installers\MenuInstaller.cs" />
     <Compile Include="Assets\Scripts\Camera\SceneCamera.cs" />
     <Compile Include="Assets\Scripts\Services\CoroutineRunner.cs" />

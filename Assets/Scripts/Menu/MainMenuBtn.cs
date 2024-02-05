@@ -21,6 +21,7 @@ public class MainMenuBtn : MonoBehaviour
     public void PlayLevel()
     {
         SceneManager.LoadScene(1);
+        Destroy(GameObject.Find("Audio Source"));
     }
 
     public void OpenShop()

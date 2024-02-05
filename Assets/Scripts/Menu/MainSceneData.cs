@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MainSceneData
@@ -28,7 +27,7 @@ public class MainSceneData
             Credits -= UpgradePrice;
             UpgradeLevel++;
             UpgradePrice *= 2;
-            _movingSpeed += 1;
+            _movingSpeed += 0.005f;
             SaveData();
             OnUpgrade?.Invoke();
         }
@@ -52,7 +51,7 @@ public class MainSceneData
         else 
         {
             Debug.Log("Stats not found. Load Default");
-            _movingSpeed = 0.1f;
+            _movingSpeed = 0.005f;
             UpgradeLevel = 1;
             UpgradePrice = 100;
             Credits = 0;
